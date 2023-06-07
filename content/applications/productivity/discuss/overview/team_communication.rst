@@ -1,16 +1,16 @@
 ======================================
-Efficiently Communicate Using Channels
+Efficiently communicate using channels
 ======================================
 
-You can use channels to organize discussions between individual teams, departments, projects, or any
-other group that requires regular communication. This way, you keep everyone in the loop updated
-with the latest developments.
+Channels can be used to organize discussions between individual teams, departments, projects, or any
+other group that requires regular communication. This way, everyone in the loop updated with the
+latest developments.
 
-Public and Private channels
+Public and private channels
 ===========================
 
-A *Public* channel can be seen by everyone, while a *Private* one is only visible to users invited
-to it.
+A *pulic* channel can be seen by everyone, while a *private* one is only visible to users invited to
+it.
 
 .. image:: team_communication/create_channel.png
    :align: center
@@ -25,21 +25,22 @@ to it.
 Configuration options
 ---------------------
 
-You can configure a channel’s name, description, email alias, and privacy by clicking on the
-*Channel Settings* icon on the sidebar.
+A channel’s name, description, email alias, and privacy can be configured by clicking on the
+*channel settings* ' ⚙️ ' icon on the sidebar.
 
-.. image:: team_communication/channel_settings.png
+.. image:: team_communication/channel-settings.png
    :align: center
    :alt: View of a channel’s settings form in Odoo Discuss
 
 Privacy and Members
 ~~~~~~~~~~~~~~~~~~~
 
-| Changing *Who can follow the group’s activities?* allows you to control which groups can have
-  access to the channel. Note that allowing *Everyone* to follow a private channel lets other users
-  view and join it, as they would a public one.
-| If you choose *Invited people only*, go to the *Members* tab to add your members, or, go to
-  Discuss’ main page, select the channel and click on *Invite*.
+Changing the *privacy* allows you to control which groups can have access to the channel. Note that
+allowing *User types / Internal User* to follow a private channel lets other users
+view and join it, as they would a public one.
+|
+If you choose *Invited people only*, go to the *Members* tab to add your members, or, go to
+Discuss’ main page, select the channel and click on *Invite*.
 
 .. image:: team_communication/invite_channel.png
    :align: center

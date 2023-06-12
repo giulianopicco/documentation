@@ -7,11 +7,17 @@ understand, implement, and use Colombian localization in Odoo.
 
 - Configure Master Data for Colombia
 - Use and configure Electronic Invoicing in Odoo for Colombia.
-- Avoid common mistakes
+- :ref:`Invoice creation <colombia/invoice-creation>` and :ref:`validation
+  <colombia/invoice-validation>`
+- :ref:`Reception of legal XML and PDF <colombia/invoice-xml>`
+- :ref:`Avoid common mistakes <colombia/common-errors>`
+- :ref:`Financial reports <colombia/reports>`
 
 .. seealso::
    `Smart Tutorial - Localización de Colombia
    <https://www.odoo.com/slides/smart-tutorial-localizacion-de-colombia-132>`_
+
+.. _colombia/configuration:
 
 Configuration
 =============
@@ -133,11 +139,15 @@ Users
 The default template that is used by Odoo on the invoice PDF includes the job position of the
 salesperson, so the :guilabel:`Job Position` field should be configured.
 
+.. _colombia/workflows:
+
 Main workflows
 ==============
 
 .. image:: colombia/electronic-invoice-workflow.png
    :alt: Electronic invoice workflow in Odoo.
+
+.. _colombia/invoice-creation:
 
 Invoice creation
 ----------------
@@ -154,6 +164,8 @@ There are three types of documents:
   company is not able to use the ERP and if it is necessary to generate the invoice manually when
   this invoice is added to the ERP.
 
+.. _colombia/invoice-validation:
+
 Invoice validation
 ------------------
 
@@ -166,6 +178,8 @@ is also displayed in the chatter.
 The :guilabel:`Electronic Invoice Name` field is now displayed in the :guilabel:`Other Info` tab
 with the name of the XML file. Additionally, the :guilabel:`Electronic Invoice Status` field is
 displayed with the initial value :guilabel:`In progress`.
+
+.. _colombia/invoice-xml:
 
 Reception of legal XML and PDF
 ------------------------------
@@ -189,6 +203,8 @@ After this:
 
 - The electronic invoice status changes to :guilabel:`Accepted`.
 
+.. _colombia/common-errors:
+
 Common errors
 -------------
 
@@ -209,6 +225,8 @@ Additional use cases
 
 The process for credit and debit notes is exactly the same as the invoice, the functional workflow
 remains the same as well.
+
+.. _colombia/reports:
 
 Financial reports
 =================

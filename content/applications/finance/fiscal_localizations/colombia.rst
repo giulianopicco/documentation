@@ -34,9 +34,15 @@ localization:
    * - :guilabel:`Colombia - Accounting`
      - `l10n_co`
      - Default :ref:`fiscal localization package <fiscal_localizations/packages>`
-   * - :guilabel:`Colombia E-invoice Integration`
+   * - :guilabel:`Electronic invoicing for Colombia with Carvajal`
      - `l10n_co_edi`
      - Carvajal e-invoicing integration
+   * - :guilabel:`Colombian - Point of Sale`
+     - `l10n_co_pos`
+     - Point of Sale
+   * - :guilabel:`Colombian - Accounting Reports`
+     - `l10n_co_reports`
+     - Colombian reports
 
 Configure credentials for Carvajal web service
 ----------------------------------------------
@@ -47,7 +53,6 @@ and look for the :guilabel:`Colombian Electronic Invoice` section. Then, fill in
 configuration information provided by Carvajal.
 
 .. image:: colombia/carvajal-credential-config.png
-   :align: center
    :alt: Configure credentials for Carvajal web service in Odoo.
 
 Check the :guilabel:`Test mode` checkbox to connect with the Carvajal testing environment. This
@@ -72,7 +77,6 @@ Navigate to :menuselection:`Accounting --> Configuration --> Settings` and look 
 :guilabel:`Colombian Electronic Invoice` section.
 
 .. image:: colombia/report-config.png
-   :align: center
    :alt: Configure the report data in Odoo.
 
 Configure data required in the XML
@@ -91,7 +95,6 @@ Impuestos y Aduanas Nacionales)` are now available on the Partner form. Colombia
 have their identification number (:guilabel:`VAT`) and :guilabel:`Document Type` set:
 
 .. image:: colombia/partner-rut-doc-type.png
-   :align: center
    :alt: The document type of RUT set in Odoo.
 
 .. tip::
@@ -110,7 +113,6 @@ The required fields can be found in :menuselection:`Partner --> Sales & Purchase
 Information`.
 
 .. image:: colombia/partner-fiscal-information.png
-   :align: center
    :alt: The fiscal information included in the electronic invoice module in Odoo.
 
 Additionally, two boolean fields were added in order to specify the fiscal regimen of the partner.
@@ -125,7 +127,6 @@ Retention tax types (ICA, IVA, Fuente) are also included in the options to confi
 configuration is used in order to correctly display taxes in the invoice PDF.
 
 .. image:: colombia/retention-tax-types.png
-   :align: center
    :alt: The ICA, IVA and Fuente fields in the Advanced Options tab in Odoo.
 
 Users

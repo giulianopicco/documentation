@@ -6,14 +6,7 @@ Main workflows
 ==============
 
 .. image:: workflows/electronic-invoice-workflow.png
-   :align: center
    :alt: Electronic invoice workflow in Odoo.
-
-Invoice
--------
-
-With all of the master data and credentials configured, it is possible to start testing the
-electronic invoice workflow.
 
 Invoice creation
 ----------------
@@ -37,7 +30,6 @@ After the invoice is validated, an XML file is created and sent automatically to
 is also displayed in the chatter.
 
 .. image:: workflows/carvajal-invoice-xml-chatter.png
-   :align: center
    :alt: Carvajal XML invoice file in Odoo chatter.
 
 The :guilabel:`Electronic Invoice Name` field is now displayed in the :guilabel:`Other Info` tab
@@ -59,11 +51,9 @@ After this:
 - A ZIP containing the legal XML and the PDF is downloaded and displayed in the invoice chatter:
 
   .. image:: workflows/zip-invoice-chatter.png
-     :align: center
      :alt: ZIP file displayed in the invoice chatter in Odoo.
 
   .. image:: workflows/zip-file-contents.png
-     :align: center
      :alt: XML and PDF contained in invoice ZIP file.
 
 - The electronic invoice status changes to :guilabel:`Accepted`.
@@ -75,14 +65,12 @@ During the XML validation the most common errors are usually related to missing 
 cases, error messages are shown in the chatter after updating the electronic invoice status.
 
 .. image:: workflows/xml-validation-errors.png
-   :align: center
    :alt: XML validation errors shown in the invoice chatter in Odoo.
 
 After the master data is corrected, it's possible to reprocess the XML with the new data and send
 the updated version, using the following button in the :guilabel:`Action` drop-down menu.
 
 .. image:: workflows/updated-invoice-status.png
-   :align: center
    :alt: The updated invoice status in Odoo.
 
 Additional use cases
@@ -92,4 +80,4 @@ The process for credit and debit notes is exactly the same as the invoice, the f
 remains the same as well.
 
 .. seealso::
-   - :doc:`/applications/finance/fiscal_localizations/colombia/reports`
+   :doc:`/applications/finance/fiscal_localizations/colombia/reports`

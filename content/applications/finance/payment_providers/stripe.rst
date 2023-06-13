@@ -24,7 +24,6 @@ The method to acquire your credentials depends on your hosting type:
       #. Confirm your email address when Stripe sends you a confirmation email.
       #. At the end of the process, you are redirected to Odoo. If you submitted all the requested
          information, you are all set and your payment provider is enabled.
-      #. You can continue to :ref:`stripe/local-payment-methods`.
 
       .. tip::
          To use your own API keys, :ref:`activate the Developer mode <developer-mode>` and
@@ -42,7 +41,6 @@ The method to acquire your credentials depends on your hosting type:
       #. :ref:`Fill in your credentials <stripe/api-keys>`.
       #. :ref:`Generate a webhook <stripe/webhook>`.
       #. Enable the payment provider.
-      #. You are all set and can continue to :ref:`stripe/local-payment-methods`.
 
 .. tip::
    To connect your Stripe account after the onboarding is already completed, go to
@@ -141,40 +139,10 @@ To set it up, enable the :guilabel:`Capture Amount Manually` option on Odoo, as 
 .. seealso::
    - :doc:`../payment_providers`
 
-.. _stripe/local-payment-methods:
-
-Enable local payment methods
-============================
-
-Local payment methods are payment methods that are only available for certain merchants and
-customers countries and currencies.
-
-Odoo supports the following local payment methods:
-
-- Bancontact
-- EPS
-- giropay
-- iDEAL
-- Przelewy24 (P24)
-
-To enable some of these local payment methods with Stripe, go to
-:menuselection:`Payment Providers --> Stripe --> Configuration` and add the desired
-payment methods in the **Supported Payment Methods** field. If the desired payment method is already
-listed, you don't have anything to do.
-
-.. image:: stripe/stripe_enable_local_payment_method.png
-   :align: center
-   :alt: Select and add icons of the payment methods you want to enable
-
-.. note::
-   - If a payment method record does not exist in the database and its related local payment method is
-     listed above, it is considered enabled with Stripe.
-   - If a local payment method is not listed above, it is not supported and cannot be enabled.
-
 .. _stripe/express-checkout:
 
 Enable express checkout
-=======================
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. seealso::
    :ref:`payment_providers/features/express_checkout`
